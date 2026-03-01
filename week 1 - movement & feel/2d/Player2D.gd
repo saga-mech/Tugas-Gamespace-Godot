@@ -1,4 +1,4 @@
-class_name Player
+class_name Player2D
 extends CharacterBody2D
 ## Player Class
 ##
@@ -16,7 +16,13 @@ extends CharacterBody2D
 @export var speed_mult: float = 0
 @export var jump_mult : float = 0
 
+@export_group("Movement Feel")
+@export var coyote_time: float = 0
+@export var jump_buffer: float = 0
+
 var _direction: float = 0
+var _coyote_timer: float = 0
+var _jump_buffer_timer: float = 0
 
 ## Fungsi Process ini digunakan untuk memproses game secara terus menerus tanpa henti
 ## sampai game dihentikan
@@ -28,10 +34,16 @@ func _process(_delta: float) -> void:
 func _physics_process(delta: float) -> void:
 	if not is_on_floor():
 		velocity += get_gravity() * delta * gravity_mult
+		_coyote_timer -= delta
+	else:
+		_coyote_timer = coyote_time
 	
-	if Input.is_action_just_pressed("jump") and is_on_floor():
-		_jump()
+	if Input.is_action_just_pressed("jump"):
+		_jump_buffer_timer = jump_buffer
 	
+	_jump_buffer_timer -= delta
+	
+	_jump()
 	_move()
 	move_and_slide() ## (PENTING !!) fungsi untuk meng eksekusi proses fisika
 
@@ -45,7 +57,10 @@ func _move() -> void:
 
 ## fungsi buatan sendiri yang mengatur jump
 func _jump() -> void:
-	velocity.y = -jump_force * jump_mult
+	if _jump_buffer_timer > 0 and _coyote_timer > 0:
+		velocity.y = -jump_force * jump_mult
+		_jump_buffer_timer = 0
+		_coyote_timer = 0
 
 ## fungsi buatan sendiri yang mengatur animasi player
 func _animation() -> void:
