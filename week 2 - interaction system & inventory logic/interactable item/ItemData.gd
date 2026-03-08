@@ -5,6 +5,7 @@ enum TYPE{
 	CURRENCY,
 	KEY,
 	CONSUMABLES,
+	EQUIPABLE,
 }
 
 @export var name: String = ""
