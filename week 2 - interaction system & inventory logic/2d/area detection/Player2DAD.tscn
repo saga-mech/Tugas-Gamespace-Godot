@@ -1,12 +1,13 @@
 [gd_scene format=3 uid="uid://dcn0yhs82gngm"]
 
-[ext_resource type="Script" uid="uid://c50me1tsasdl0" path="res://week 1 - movement & feel/2d/Player2D.gd" id="1_tfhl7"]
+[ext_resource type="Script" uid="uid://c50me1tsasdl0" path="res://week 1 - movement & feel (Ghost Mechanic)/2d/Player2D.gd" id="1_tfhl7"]
 [ext_resource type="Texture2D" uid="uid://bmywpyxw3hjgj" path="res://assets/2d/platformer pack/Characters/character_purple_hit.svg" id="2_28pge"]
 [ext_resource type="Texture2D" uid="uid://vs0rvrfwverk" path="res://assets/2d/platformer pack/Characters/character_purple_front.svg" id="3_62fc6"]
 [ext_resource type="Texture2D" uid="uid://fo5cpby21s0v" path="res://assets/2d/platformer pack/Characters/character_purple_jump.svg" id="4_kvjvd"]
 [ext_resource type="Texture2D" uid="uid://chawdvikvpue4" path="res://assets/2d/platformer pack/Characters/character_purple_idle.svg" id="5_slob3"]
 [ext_resource type="Texture2D" uid="uid://chydx0ntk35a7" path="res://assets/2d/platformer pack/Characters/character_purple_walk_a.svg" id="6_6b0n7"]
 [ext_resource type="Texture2D" uid="uid://14kr5erln3bt" path="res://assets/2d/platformer pack/Characters/character_purple_walk_b.svg" id="7_8hyjo"]
+
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_i6eer"]
 animations = [{

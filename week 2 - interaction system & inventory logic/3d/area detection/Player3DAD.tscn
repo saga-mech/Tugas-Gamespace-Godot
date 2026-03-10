@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://dbbgoeptni6bc"]
 
-[ext_resource type="Script" uid="uid://calijbykw87ds" path="res://week 1 - movement & feel/3d/Player3D.gd" id="1_pne64"]
-[ext_resource type="Script" uid="uid://bltc6grmheq3j" path="res://week 1 - movement & feel/3d/TPPCameraController.gd" id="2_3yslf"]
+[ext_resource type="Script" uid="uid://calijbykw87ds" path="res://week 1 - movement & feel (Ghost Mechanic)/3d/Player3D.gd" id="1_pne64"]
+[ext_resource type="Script" uid="uid://bltc6grmheq3j" path="res://week 1 - movement & feel (Ghost Mechanic)/3d/TPPCameraController.gd" id="2_3yslf"]
 [ext_resource type="Script" uid="uid://d2o1f1lohng4b" path="res://week 2 - interaction system & inventory logic/3d/area detection/AreaDetection3D.gd" id="3_3pbil"]
+
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_7cat8"]
 

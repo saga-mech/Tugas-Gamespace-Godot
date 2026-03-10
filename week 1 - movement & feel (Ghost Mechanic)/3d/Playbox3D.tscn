@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://b62hwn4xrcb60"]
 
 [ext_resource type="Texture2D" uid="uid://bfim8c755nq7b" path="res://assets/3d/texture prototype/Green/texture_09.png" id="1_k7703"]
-[ext_resource type="PackedScene" uid="uid://b4ok5m56ko5it" path="res://week 1 - movement & feel/3d/Player3D.tscn" id="1_usdn4"]
+[ext_resource type="PackedScene" uid="uid://b4ok5m56ko5it" path="res://week 1 - movement & feel (Ghost Mechanic)/3d/Player3D.tscn" id="1_usdn4"]
 [ext_resource type="Texture2D" uid="uid://byptweak7wedl" path="res://assets/3d/texture prototype/Orange/texture_02.png" id="3_gkmc1"]
+
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_0wegs"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)

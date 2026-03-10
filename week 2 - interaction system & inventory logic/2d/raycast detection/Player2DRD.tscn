@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://chrkp3pn4cuho"]
 
-[ext_resource type="Script" uid="uid://c50me1tsasdl0" path="res://week 1 - movement & feel/2d/Player2D.gd" id="1_k3adh"]
+[ext_resource type="Script" uid="uid://c50me1tsasdl0" path="res://week 1 - movement & feel (Ghost Mechanic)/2d/Player2D.gd" id="1_k3adh"]
 [ext_resource type="Texture2D" uid="uid://bmywpyxw3hjgj" path="res://assets/2d/platformer pack/Characters/character_purple_hit.svg" id="2_bktkk"]
 [ext_resource type="Texture2D" uid="uid://vs0rvrfwverk" path="res://assets/2d/platformer pack/Characters/character_purple_front.svg" id="3_urlt3"]
 [ext_resource type="Texture2D" uid="uid://fo5cpby21s0v" path="res://assets/2d/platformer pack/Characters/character_purple_jump.svg" id="4_0e78b"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://chydx0ntk35a7" path="res://assets/2d/platformer pack/Characters/character_purple_walk_a.svg" id="6_ji8gh"]
 [ext_resource type="Texture2D" uid="uid://14kr5erln3bt" path="res://assets/2d/platformer pack/Characters/character_purple_walk_b.svg" id="7_x076o"]
 [ext_resource type="Script" uid="uid://ctjjcbubu84y1" path="res://week 2 - interaction system & inventory logic/2d/raycast detection/Raycast.gd" id="8_rew38"]
+
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_i6eer"]
 animations = [{
