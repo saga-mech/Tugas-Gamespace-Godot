@@ -1,6 +1,9 @@
 # InventoryManager.gd
 extends Node
 
+# Menandakan apakah terminal sedang aktif
+var is_open: bool = false
+
 signal add_to_inventory(item_name: String ,data: Dictionary[String, ItemData])
 
 var inventory : Dictionary[String, ItemData] = {}

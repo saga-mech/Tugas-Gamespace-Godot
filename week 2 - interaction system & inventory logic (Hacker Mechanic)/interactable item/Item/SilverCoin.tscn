@@ -6,6 +6,9 @@
 [ext_resource type="Script" uid="uid://bx67yd0tqlogf" path="res://week 2 - interaction system & inventory logic/interactable item/component/AreaChecker.gd" id="3_sxkhf"]
 [ext_resource type="Texture2D" uid="uid://lnni7sv70eti" path="res://assets/2d/platformer pack/Tiles/coin_silver_side.svg" id="4_xd1ac"]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_tx7ub"]
+radius = 30.066593
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_0jqjr"]
 animations = [{
 "frames": [{
@@ -20,13 +23,14 @@ animations = [{
 "speed": 6.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_tx7ub"]
-radius = 30.066593
-
-[node name="SilverCoin" type="Node2D" unique_id=1768713139 node_paths=PackedStringArray("area_checker")]
+[node name="SilverCoin" type="StaticBody2D" unique_id=1624778154 node_paths=PackedStringArray("sprite", "viscue_text")]
 script = ExtResource("1_tt87l")
 item_data = ExtResource("2_1ckvm")
-area_checker = NodePath("AreaChecker2D")
+sprite = NodePath("AnimatedSprite2D")
+viscue_text = NodePath("Label")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1702564755]
+shape = SubResource("CircleShape2D_tx7ub")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1494841905]
 sprite_frames = SubResource("SpriteFrames_0jqjr")
@@ -40,3 +44,7 @@ metadata/_custom_type_script = "uid://bx67yd0tqlogf"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AreaChecker2D" unique_id=63668450]
 shape = SubResource("CircleShape2D_tx7ub")
+
+[node name="Label" type="Label" parent="." unique_id=159608164]
+offset_right = 40.0
+offset_bottom = 23.0

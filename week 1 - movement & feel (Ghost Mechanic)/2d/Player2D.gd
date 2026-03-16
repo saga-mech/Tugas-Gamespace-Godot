@@ -42,13 +42,15 @@ func _process(_delta: float) -> void:
 # Fungsi Physics Process digunakan untuk memproses game secara terus menerus juga, namun di fungsi ini
 # ada tambahan proses fisika (Grivtasi, Velocity, dll)
 func _physics_process(delta: float) -> void:
+	var direction = Vector2.ZERO
+	
 	if not is_on_floor():
 		velocity += get_gravity() * delta * gravity_mult
 		_coyote_timer -= delta
 	else:
 		_coyote_timer = coyote_time
 
-	if Input.is_action_just_pressed("jump"):
+	if Input.is_action_just_pressed("jump")and not TerminalManager.is_open:
 		_jump_buffer_timer = jump_buffer
 
 	_jump_buffer_timer -= delta
@@ -57,12 +59,13 @@ func _physics_process(delta: float) -> void:
 	_jump()
 	_move()
 	
+	
 	move_and_slide() ## (PENTING !!) fungsi untuk meng eksekusi proses fisika
 
 # Fungsi buatan sendiri yang mengatur mekanik hantu
 func _handle_ghost() -> void:
 	# Mengaktifkan mode hantu saat tombol ditekan
-	if Input.is_action_pressed("Ghost"):
+	if Input.is_action_pressed("Ghost")and not TerminalManager.is_open:
 		is_ghost = true
 		# Matikan deteksi tabrakan dengan layer dinding
 		set_collision_mask_value(wall_collision_layer, false)
@@ -79,7 +82,11 @@ func _handle_ghost() -> void:
 
 # fungsi buatan sendiri yang mengatur move
 func _move() -> void:
-	_direction = Input.get_axis("left", "right")
+	if not TerminalManager.is_open:
+		_direction = Input.get_axis("left", "right")
+	else:
+		_direction = 0
+	
 	if _direction != 0:
 		# velocity itu hasil kali dari arah dan kecepatan
 		velocity.x = move_toward(velocity.x, move_speed * _direction * speed_mult, acceleration)
