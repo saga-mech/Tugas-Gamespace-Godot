@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://lwh4llml0b1i"]
 
-[ext_resource type="Script" uid="uid://cdrcxvedg4hqc" path="res://week 3 - projectile & combat (Black Hole Mechanic)/3D/HealthBar3D.gd" id="1_nv6qr"]
+[ext_resource type="Script" uid="uid://cdrcxvedg4hqc" path="res://week 3 - projectile & combat (Orbit Mechanic)/3D/HealthBar3D.gd" id="1_nv6qr"]
 
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ekbhl"]

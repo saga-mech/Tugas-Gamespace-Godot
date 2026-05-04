@@ -3,10 +3,10 @@
 [ext_resource type="Texture2D" uid="uid://78lu1acphucj" path="res://assets/2d/platformer pack/BackgroundTilemap.png" id="1_urhs7"]
 [ext_resource type="Texture2D" uid="uid://bvlaxw21uwi6m" path="res://assets/2d/platformer pack/tilemap.png" id="2_cm1m4"]
 [ext_resource type="Texture2D" uid="uid://cmpt1feklfufa" path="res://assets/2d/platformer pack/Tiles/block_planks.svg" id="3_hktms"]
-[ext_resource type="PackedScene" uid="uid://dcn0yhs82gngm" path="res://week 2 - interaction system & inventory logic/2d/area detection/Player2DAD.tscn" id="4_orpu5"]
-[ext_resource type="PackedScene" uid="uid://dypq4q8syio0p" path="res://week 2 - interaction system & inventory logic/interactable item/Item/SilverCoin.tscn" id="4_toyva"]
-[ext_resource type="PackedScene" uid="uid://c7nhe4fqyjv3p" path="res://week 2 - interaction system & inventory logic/UICoin.tscn" id="5_orpu5"]
-[ext_resource type="Script" uid="uid://ch18hma6fe2on" path="res://week 2 - interaction system & inventory logic/TerminalUI.gd" id="6_7v2y0"]
+[ext_resource type="PackedScene" uid="uid://dcn0yhs82gngm" path="res://week 2 - interaction system & inventory logic (Hacker Mechanic)/2d/area detection/Player2DAD.tscn" id="4_orpu5"]
+[ext_resource type="PackedScene" uid="uid://dypq4q8syio0p" path="res://week 2 - interaction system & inventory logic (Hacker Mechanic)/interactable item/Item/SilverCoin.tscn" id="4_toyva"]
+[ext_resource type="PackedScene" uid="uid://c7nhe4fqyjv3p" path="res://week 2 - interaction system & inventory logic (Hacker Mechanic)/UICoin.tscn" id="5_orpu5"]
+[ext_resource type="Script" uid="uid://ch18hma6fe2on" path="res://week 2 - interaction system & inventory logic (Hacker Mechanic)/TerminalUI.gd" id="6_7v2y0"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_038p0"]
 texture = ExtResource("1_urhs7")
@@ -925,8 +925,8 @@ script = ExtResource("6_7v2y0")
 layout_mode = 0
 offset_left = -16.0
 offset_top = -38.0
-offset_right = 529.0
-offset_bottom = 110.0
+offset_right = 538.0
+offset_bottom = 233.0
 
 [node name="OutputLog" type="Label" parent="CanvasLayer/TerminalUI" unique_id=292211033]
 layout_mode = 1

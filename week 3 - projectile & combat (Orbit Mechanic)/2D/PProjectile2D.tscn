@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cqswaowmfvd0i"]
 
-[ext_resource type="Script" uid="uid://crs32rfydeds4" path="res://week 3 - projectile & combat (Black Hole Mechanic)/2D/Projectile2D.gd" id="1_fw7rc"]
+[ext_resource type="Script" uid="uid://crs32rfydeds4" path="res://week 3 - projectile & combat (Orbit Mechanic)/2D/Projectile2D.gd" id="1_fw7rc"]
 [ext_resource type="Texture2D" uid="uid://d0hvqy4ikxhxj" path="res://assets/2d/platformer pack/Tiles/star.svg" id="1_rx8lg"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4nvqt"]

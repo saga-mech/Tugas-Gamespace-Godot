@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bv8ltnr8e0e5j"]
 
-[ext_resource type="Script" uid="uid://dc8cxk0rt4asr" path="res://week 3 - projectile & combat (Black Hole Mechanic)/3D/DummyTarget3D.gd" id="1_j1pbo"]
+[ext_resource type="Script" uid="uid://dc8cxk0rt4asr" path="res://week 3 - projectile & combat (Orbit Mechanic)/3D/DummyTarget3D.gd" id="1_j1pbo"]
 
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ihjo2"]

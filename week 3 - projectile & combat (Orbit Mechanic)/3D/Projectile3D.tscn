@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://btoxc7ja4qwou"]
 
-[ext_resource type="Script" uid="uid://2rfiblpftgud" path="res://week 3 - projectile & combat (Black Hole Mechanic)/3D/Projectile3D.gd" id="1_7lcrt"]
+[ext_resource type="Script" uid="uid://2rfiblpftgud" path="res://week 3 - projectile & combat (Orbit Mechanic)/3D/Projectile3D.gd" id="1_7lcrt"]
 
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_4yg3c"]

@@ -2,10 +2,10 @@
 
 [ext_resource type="Texture2D" uid="uid://bfim8c755nq7b" path="res://assets/3d/texture prototype/Green/texture_09.png" id="1_4sw5t"]
 [ext_resource type="Texture2D" uid="uid://byptweak7wedl" path="res://assets/3d/texture prototype/Orange/texture_02.png" id="2_uyr2j"]
-[ext_resource type="PackedScene" uid="uid://b0yoirjp2t3ai" path="res://week 3 - projectile & combat (Black Hole Mechanic)/3D/FPSProjectile.tscn" id="3_4sw5t"]
+[ext_resource type="PackedScene" uid="uid://b0yoirjp2t3ai" path="res://week 3 - projectile & combat (Orbit Mechanic)/3D/FPSProjectile.tscn" id="3_4sw5t"]
 [ext_resource type="PackedScene" uid="uid://bjgl0cqk6e4bm" path="res://week 2 - interaction system & inventory logic (Hacker Mechanic)/interactable item/Item/Sword.tscn" id="4_b8nv0"]
-[ext_resource type="PackedScene" uid="uid://bv8ltnr8e0e5j" path="res://week 3 - projectile & combat (Black Hole Mechanic)/3D/DummyTarget3D.tscn" id="5_uyr2j"]
-[ext_resource type="PackedScene" uid="uid://lwh4llml0b1i" path="res://week 3 - projectile & combat (Black Hole Mechanic)/3D/HealthBarCharacter3D.tscn" id="6_76803"]
+[ext_resource type="PackedScene" uid="uid://bv8ltnr8e0e5j" path="res://week 3 - projectile & combat (Orbit Mechanic)/3D/DummyTarget3D.tscn" id="5_uyr2j"]
+[ext_resource type="PackedScene" uid="uid://lwh4llml0b1i" path="res://week 3 - projectile & combat (Orbit Mechanic)/3D/HealthBarCharacter3D.tscn" id="6_76803"]
 
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_0wegs"]

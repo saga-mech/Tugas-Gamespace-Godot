@@ -3,8 +3,8 @@
 [ext_resource type="Script" uid="uid://kjrorq0k1mop" path="res://week 2 - interaction system & inventory logic (Hacker Mechanic)/3d/raycast detection/player/PlayerFPS.gd" id="1_jydqo"]
 [ext_resource type="Script" uid="uid://cg0dcyt2ir7dw" path="res://week 2 - interaction system & inventory logic (Hacker Mechanic)/3d/raycast detection/player/RayDetector3D.gd" id="2_3ret4"]
 [ext_resource type="Texture2D" path="res://assets/Crosshair/White/crosshair010.png" id="3_p65td"]
-[ext_resource type="Script" uid="uid://dd517ughkla2v" path="res://week 3 - projectile & combat (Black Hole Mechanic)/3D/ShootRay.gd" id="3_s5c76"]
-[ext_resource type="Script" uid="uid://65r88ulnnccj" path="res://week 3 - projectile & combat (Black Hole Mechanic)/3D/ShootControl.gd" id="5_4onfk"]
+[ext_resource type="Script" uid="uid://dd517ughkla2v" path="res://week 3 - projectile & combat (Orbit Mechanic)/3D/ShootRay.gd" id="3_s5c76"]
+[ext_resource type="Script" uid="uid://65r88ulnnccj" path="res://week 3 - projectile & combat (Orbit Mechanic)/3D/ShootControl.gd" id="5_4onfk"]
 
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_jw8q1"]

@@ -26,10 +26,19 @@ extends CharacterBody2D
 ## Seberapa transparan karakter saat jadi hantu (0.0 = hilang, 1.0 = solid)
 @export var ghost_alpha: float = 0.5
 
+@export_group("Projectile System")
+## Wadah untuk menampung peluru saat di-spawn
+@export var projectile_container: Node2D = null
+## Kecepatan luncur peluru
+@export var projectile_speed: float = 600.0
+## Damage atau daya serang peluru
+@export var projectile_damage: float = 10.0
+
 var _direction: float = 0
 var _coyote_timer: float = 0
 var _jump_buffer_timer: float = 0
 var is_ghost: bool = false # Status apakah sedang mode hantu atau tidak
+
 
 func get_direction() -> float:
 	return _direction
@@ -125,3 +134,14 @@ func _facing_direction() -> void:
 		animation.flip_h = false
 	elif _direction < 0:
 		animation.flip_h = true
+
+# Tambahkan ini di dalam skrip Player2D kamu
+
+var max_health: float = 100.0
+var current_health: float = 100.0
+
+func get_max_health() -> float:
+	return max_health
+
+func get_current_health() -> float:
+	return current_health

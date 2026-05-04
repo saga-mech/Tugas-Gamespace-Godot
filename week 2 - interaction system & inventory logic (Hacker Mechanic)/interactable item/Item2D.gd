@@ -1,5 +1,5 @@
 class_name Item2D
-extends StaticBody2D # Diubah dari StaticBody3D menjadi 2D
+extends Area2D # Sekarang menggunakan Area2D agar tidak padat
 
 @export var item_data: ItemData = null
 @export var sprite: AnimatedSprite2D = null # Menggunakan Sprite2D alih-alih MeshInstance3D
@@ -22,6 +22,8 @@ func _ready() -> void:
 	# Daftarkan ke TerminalManager (Sama persis dengan versi 3D)
 	if is_hackable:
 		TerminalManager.register_node(network_id, self)
+
+	body_entered.connect(_on_body_entered)
 
 func _exit_tree() -> void:
 	# Hapus dari TerminalManager saat hancur/diambil (Sama persis)
@@ -50,3 +52,12 @@ func remote_hack() -> void:
 	# Efek visual saat diretas dari terminal (misal: sprite berkedip hijau)
 	sprite.modulate = Color(0.0, 2.0, 0.0) 
 	collect()
+
+# Fungsi ini dipanggil otomatis saat ada yang menabrak area koin
+func _on_body_entered(body: Node2D) -> void:
+	# CCTV 1: Mengecek siapa saja yang menyenggol koin ini
+	print("Koin disenggol oleh: ", body.name)
+	if body is Player2D:
+		# CCTV 2: Memastikan Godot tahu bahwa itu adalah pemain
+		print("Pemain terdeteksi! Koin diambil!")
+		collect()

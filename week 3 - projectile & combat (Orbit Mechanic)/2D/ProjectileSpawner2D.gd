@@ -26,6 +26,21 @@ func _process(delta: float) -> void:
 	else:
 		marker.position.x = 50
 
+	# --- PENGECEKAN TERMINAL MANAGER ---
+	if TerminalManager.is_open:
+		# Jika terminal terbuka, kita reset semua status tembakan.
+		# Ini mencegah bug di mana pemain menahan spasi, membuka terminal, 
+		# lalu tembakan tiba-tiba keluar saat terminal ditutup.
+		press_time = 0.0
+		spawn_timer = 0.0
+		is_holding = false
+		
+		# Gunakan 'return' untuk langsung keluar dari fungsi _process.
+		# Sehingga, kode Input di bawahnya TIDAK AKAN dieksekusi selama terminal terbuka.
+		return 
+
+	# --- LOGIKA TEMBAKAN (Hanya berjalan jika terminal tertutup) ---
+
 	# JIKA TOMBOL DITEKAN TERUS
 	if Input.is_action_pressed("fire"):
 		press_time += delta # Mulai menghitung stopwatch

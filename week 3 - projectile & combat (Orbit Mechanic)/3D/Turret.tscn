@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bscly20471et7"]
 
-[ext_resource type="Script" uid="uid://df4gnfrtg43pb" path="res://week 3 - projectile & combat (Black Hole Mechanic)/3D/Turret.gd" id="1_cynpp"]
-[ext_resource type="PackedScene" uid="uid://btoxc7ja4qwou" path="res://week 3 - projectile & combat (Black Hole Mechanic)/3D/Projectile3D.tscn" id="2_wwpap"]
+[ext_resource type="Script" uid="uid://df4gnfrtg43pb" path="res://week 3 - projectile & combat (Orbit Mechanic)/3D/Turret.gd" id="1_cynpp"]
+[ext_resource type="PackedScene" uid="uid://btoxc7ja4qwou" path="res://week 3 - projectile & combat (Orbit Mechanic)/3D/Projectile3D.tscn" id="2_wwpap"]
 
 
 [sub_resource type="BoxMesh" id="BoxMesh_1b7js"]

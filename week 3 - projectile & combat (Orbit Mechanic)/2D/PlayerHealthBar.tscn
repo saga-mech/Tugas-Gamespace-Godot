@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://c22h2qwavmqjk"]
 
-[ext_resource type="Script" uid="uid://cu8h82pfieij7" path="res://week 3 - projectile & combat (Black Hole Mechanic)/2D/PlayerHealthBar.gd" id="1_g1tq4"]
-
+[ext_resource type="Script" uid="uid://cu8h82pfieij7" path="res://week 3 - projectile & combat (Orbit Mechanic)/2D/PlayerHealthBar.gd" id="1_g1tq4"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_shcnc"]
 bg_color = Color(0.19434929, 0.19434926, 0.19434926, 1)
