@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://dvg20m8tmwe02"]
+[gd_scene format=3 uid="uid://dvg20m8tmwe02"]
 
-[ext_resource type="Script" path="res://week 5 - collectible, UI, & data persistence/2D/PauseButton.gd" id="1_script"]
+[ext_resource type="Script" uid="uid://xbh8ntotkde3" path="res://week 5 - collectible, UI, & data persistence/2D/PauseButton.gd" id="1_script"]
+
 
 [node name="PauseButton" type="CanvasLayer" unique_id=1874624726]
 script = ExtResource("1_script")

@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://coxvl2iqacxx"]
+
+[ext_resource type="Theme" uid="uid://b5vhr3dxyjmpm" path="res://week 5 - collectible, UI, & data persistence/2D/ProgressBar.tres" id="1_dal6i"]
+[ext_resource type="Script" uid="uid://yfilh5dbkevx" path="res://week 5 - collectible, UI, & data persistence/2D/loading_screen.gd" id="1_rbl0q"]
+
+[node name="LoadingScreen" type="Control" unique_id=1184859282]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_rbl0q")
+
+[node name="ProgressBar" type="ProgressBar" parent="." unique_id=1341103428]
+layout_mode = 0
+offset_left = 186.0
+offset_top = 250.0
+offset_right = 984.0
+offset_bottom = 373.0
+theme = ExtResource("1_dal6i")

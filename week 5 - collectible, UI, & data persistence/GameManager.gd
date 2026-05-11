@@ -1,5 +1,13 @@
-## GameManager - Mengelola Pause dan Save System
+# GameManager.gd
 extends Node
+
+var next_scene_path: String = ""
+
+# Fungsi bantuan agar pemanggilan lebih rapi
+func load_scene(path: String):
+	next_scene_path = path
+	# Langsung pindah ke scene Loading Screen
+	get_tree().change_scene_to_file("res://week 5 - collectible, UI, & data persistence/2D/LoadingScreen.tscn")
 
 signal pause_toggled(is_paused: bool)
 @warning_ignore("unused_signal")
@@ -105,7 +113,7 @@ func _apply_save_data() -> void:
 	_killed_enemy_names = save_game.killed_enemies.duplicate()
 	_remove_killed_enemies()
 	
-	# Restore posisi enemy yang masih hidup
+	# Restore posisi enemy yang masih hidupa
 	for enemy in get_tree().get_nodes_in_group("enemy"):
 		if save_game.enemy_positions.has(enemy.name):
 			enemy.global_position = save_game.enemy_positions[enemy.name]
@@ -126,5 +134,5 @@ func quit_game() -> void:
 	get_tree().quit()
 
 static func _get_save_path() -> String:
-	var extension := ".tres" if OS.is_debug_build() else ".res"
+	var extension := ".res" if OS.is_debug_build() else ".tres"
 	return "user://save_game" + extension

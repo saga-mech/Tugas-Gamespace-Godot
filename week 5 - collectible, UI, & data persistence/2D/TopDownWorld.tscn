@@ -1,8 +1,8 @@
 [gd_scene format=4 uid="uid://fq6alief7aci"]
 
-[ext_resource type="TileSet" uid="uid://cyppy6urp3yka" path="res://week 4 - enemy AI & navigation/2D/Tilesets.tres" id="1_l5xku"]
+[ext_resource type="TileSet" uid="uid://cyppy6urp3yka" path="res://week 4 - enemy AI & navigation (Mimic AI)/2D/Tilesets.tres" id="1_l5xku"]
 [ext_resource type="Script" uid="uid://x1m38cyyucnp" path="res://week 5 - collectible, UI, & data persistence/2D/TopDownWorld.gd" id="1_script"]
-[ext_resource type="PackedScene" uid="uid://c6xw7wle5rt35" path="res://week 4 - enemy AI & navigation/2D/Enemy/Enemy.tscn" id="3_b3k3a"]
+[ext_resource type="PackedScene" uid="uid://c6xw7wle5rt35" path="res://week 4 - enemy AI & navigation (Mimic AI)/2D/Enemy/Enemy.tscn" id="3_b3k3a"]
 [ext_resource type="PackedScene" uid="uid://u1wc5n2mx1j4" path="res://week 5 - collectible, UI, & data persistence/2D/player/PlayerW52D.tscn" id="3_l5xku"]
 [ext_resource type="PackedScene" uid="uid://c7x2k1rgwifwc" path="res://week 5 - collectible, UI, & data persistence/2D/CoinPool.tscn" id="4_b3k3a"]
 [ext_resource type="PackedScene" uid="uid://cpty7du5p8pti" path="res://week 5 - collectible, UI, & data persistence/2D/coin/coin.tscn" id="5_b3k3a"]
