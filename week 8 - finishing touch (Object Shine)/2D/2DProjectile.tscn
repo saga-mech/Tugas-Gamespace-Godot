@@ -4,10 +4,10 @@
 [ext_resource type="Texture2D" uid="uid://bvlaxw21uwi6m" path="res://assets/2d/platformer pack/tilemap.png" id="2_upcq4"]
 [ext_resource type="PackedScene" uid="uid://dypq4q8syio0p" path="res://week 2 - interaction system & inventory logic (Hacker Mechanic)/interactable item/Item/SilverCoin.tscn" id="3_0wog5"]
 [ext_resource type="Texture2D" uid="uid://cmpt1feklfufa" path="res://assets/2d/platformer pack/Tiles/block_planks.svg" id="3_ph3ky"]
-[ext_resource type="PackedScene" uid="uid://bp5ch4prdk0t8" path="res://week 3 - projectile & combat (Orbit Mechanic)/2D/PlayerProjectile2D.tscn" id="5_unyvr"]
+[ext_resource type="PackedScene" uid="uid://bp5ch4prdk0t8" path="res://week 8 - finishing touch (Object Shine)/2D/PlayerProjectile2D.tscn" id="5_unyvr"]
 [ext_resource type="PackedScene" uid="uid://c7nhe4fqyjv3p" path="res://week 2 - interaction system & inventory logic (Hacker Mechanic)/UICoin.tscn" id="5_wkche"]
-[ext_resource type="PackedScene" uid="uid://c22h2qwavmqjk" path="res://week 3 - projectile & combat (Orbit Mechanic)/2D/PlayerHealthBar.tscn" id="6_f05n6"]
-[ext_resource type="PackedScene" uid="uid://brexolbsptbq7" path="res://week 3 - projectile & combat (Orbit Mechanic)/2D/DummyTarget.tscn" id="7_0il2q"]
+[ext_resource type="PackedScene" uid="uid://c22h2qwavmqjk" path="res://week 8 - finishing touch (Object Shine)/2D/PlayerHealthBar.tscn" id="6_f05n6"]
+[ext_resource type="PackedScene" uid="uid://brexolbsptbq7" path="res://week 8 - finishing touch (Object Shine)/2D/DummyTarget.tscn" id="7_0il2q"]
 [ext_resource type="Script" uid="uid://ch18hma6fe2on" path="res://week 2 - interaction system & inventory logic (Hacker Mechanic)/TerminalUI.gd" id="7_h4r17"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_038p0"]

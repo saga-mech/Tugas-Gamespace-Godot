@@ -1,4 +1,4 @@
-class_name Projectile2D
+class_name Projectile
 extends Area2D
 
 var projectile_speed: float = 600.0

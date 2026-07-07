@@ -2,12 +2,19 @@
 
 [ext_resource type="Script" uid="uid://r5gmhagdy58e" path="res://week 2 - interaction system & inventory logic (Hacker Mechanic)/interactable item/Item2D.gd" id="1_tt87l"]
 [ext_resource type="Resource" uid="uid://dus67xuw5ni7d" path="res://week 2 - interaction system & inventory logic (Hacker Mechanic)/interactable item/data/2D/SilverCoin.tres" id="2_1ckvm"]
+[ext_resource type="Shader" uid="uid://bwknugw7n60sl" path="res://week 2 - interaction system & inventory logic (Hacker Mechanic)/interactable item/Item/SilverCoin.gdshader" id="3_awl46"]
 [ext_resource type="Texture2D" uid="uid://dqehc0md6kaun" path="res://assets/2d/platformer pack/Tiles/coin_silver.svg" id="3_ktt1y"]
 [ext_resource type="Script" uid="uid://bx67yd0tqlogf" path="res://week 2 - interaction system & inventory logic (Hacker Mechanic)/interactable item/component/AreaChecker.gd" id="3_sxkhf"]
 [ext_resource type="Texture2D" uid="uid://lnni7sv70eti" path="res://assets/2d/platformer pack/Tiles/coin_silver_side.svg" id="4_xd1ac"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_tx7ub"]
 radius = 30.066593
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_c46vw"]
+shader = ExtResource("3_awl46")
+shader_parameter/shine_color = Color(1, 1, 1, 0.6)
+shader_parameter/shine_speed = 2.0
+shader_parameter/shine_width = 0.05
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_0jqjr"]
 animations = [{
@@ -34,6 +41,7 @@ viscue_text = NodePath("Label")
 shape = SubResource("CircleShape2D_tx7ub")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1494841905]
+material = SubResource("ShaderMaterial_c46vw")
 sprite_frames = SubResource("SpriteFrames_0jqjr")
 autoplay = "default"
 frame_progress = 0.40770456

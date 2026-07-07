@@ -68,7 +68,6 @@ func _physics_process(delta: float) -> void:
 	_jump()
 	_move()
 	
-	
 	move_and_slide() ## (PENTING !!) fungsi untuk meng eksekusi proses fisika
 
 # Fungsi buatan sendiri yang mengatur mekanik hantu
@@ -108,6 +107,10 @@ func _jump() -> void:
 		velocity.y = -jump_force * jump_mult
 		_jump_buffer_timer = 0
 		_coyote_timer = 0
+
+func pantulkan(kekuatan_pantulan: float):
+	# Mengubah velocity Y menjadi negatif agar karakter terlempar ke atas
+	velocity.y = -kekuatan_pantulan
 
 # fungsi buatan sendiri yang mengatur animasi player
 func _animation() -> void:

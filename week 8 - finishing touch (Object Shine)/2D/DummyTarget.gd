@@ -1,4 +1,4 @@
-class_name DummyTarget
+class_name DummyTarget2d
 extends CharacterBody2D
 
 @export var max_health: float = 100

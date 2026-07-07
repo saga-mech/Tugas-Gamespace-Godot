@@ -1,4 +1,4 @@
-class_name PlayerHealthBar
+class_name PlayerHealthBar2d
 extends ProgressBar
 
 @onready var player: Player2D = get_tree().get_first_node_in_group("Player")

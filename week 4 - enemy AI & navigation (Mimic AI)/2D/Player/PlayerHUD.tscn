@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://b2k8x7u8j1m1"]
 
 [ext_resource type="Theme" uid="uid://b5vhr3dxyjmpm" path="res://week 5 - collectible, UI, & data persistence/2D/ProgressBar.tres" id="1_qjy7m"]
-[ext_resource type="Script" uid="uid://66ail1kkrctq" path="res://week 4 - enemy AI & navigation/2D/Player/UI/HealthBar.gd" id="2_2bbv2"]
+[ext_resource type="Script" uid="uid://66ail1kkrctq" path="res://week 4 - enemy AI & navigation (Mimic AI)/2D/Player/UI/HealthBar.gd" id="2_2bbv2"]
 [ext_resource type="Texture2D" uid="uid://6erpp5wjggii" path="res://assets/2d/Scribbles/PNG/Default (64px)/Characters/red_hand.png" id="2_js5oy"]
-[ext_resource type="Script" uid="uid://bbdeb33m4xlq0" path="res://week 4 - enemy AI & navigation/2D/Player/UI/StaminaBar.gd" id="3_apxe5"]
-[ext_resource type="Script" uid="uid://dophvboa5ecf2" path="res://week 4 - enemy AI & navigation/2D/Player/CoinCounterUI.gd" id="4_apxe5"]
+[ext_resource type="Script" uid="uid://bbdeb33m4xlq0" path="res://week 4 - enemy AI & navigation (Mimic AI)/2D/Player/UI/StaminaBar.gd" id="3_apxe5"]
+[ext_resource type="Script" uid="uid://dophvboa5ecf2" path="res://week 4 - enemy AI & navigation (Mimic AI)/2D/Player/CoinCounterUI.gd" id="4_apxe5"]
 [ext_resource type="Texture2D" uid="uid://cwk6jef63qy3s" path="res://assets/2d/Scribbles/PNG/Default (64px)/Items/weapon_longsword.png" id="6_017vi"]
 [ext_resource type="Texture2D" uid="uid://1lnkdiw32oht" path="res://assets/2d/Scribbles/PNG/Default (64px)/Items/weapon_spear.png" id="7_rs8cs"]
 [ext_resource type="Texture2D" uid="uid://bdtvsjafk7dy4" path="res://assets/2d/Scribbles/PNG/Default (64px)/Items/weapon_axe_large.png" id="8_avpuv"]

@@ -1,4 +1,4 @@
-class_name ProjectileSpawner2D
+class_name ProjectileSpawner
 extends Node
 
 @export var player: Player2D = null
